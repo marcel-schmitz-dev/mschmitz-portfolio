@@ -1,27 +1,35 @@
+@use './styles/tokens' as *;
+@use './styles/typography';
+@use './styles/mixins';
+@use './styles/animations';
+
+
 * {
-    box-sizing: borader-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    min-width: 320px;
-    background-color: #0b0d0c;
-    color: #f2f4f0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  min-width: 320px;
+  background-color: $color-background;
 }
 
 button,
 input,
 textarea {
-    font: inherit;
+  font: inherit;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
-    
+
+img {
+  display: block;
+  max-width: 100%;
+}
